@@ -1,0 +1,539 @@
+@charset "UTF-8";
+/*============================
+desc
+============================*/
+#desc{
+	margin:20px 0 0 0;
+	color:#fff;
+}
+
+#desc h1{
+	margin:0;
+	padding:5px 10px;
+	font-size:110%;
+	text-shadow:0 1px 0px #fff;
+	color:#e4016f;
+	border-top:1px solid #cacaca;
+	border-left:1px solid #cacaca;
+	border-right:1px solid #cacaca;
+	border-bottom:2px solid #d6d4d3;
+	border-radius:7px 7px 0 0;
+	box-shadow:0 -1px 1px #9e9b9a inset;
+	background:#fcfcfc;
+	background:-webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#eaeaea));
+	background:-moz-linear-gradient(top,#fcfcfc,#eaeaea);
+	background:-o-linear-gradient(top,#fcfcfc,#eaeaea);
+	background:-ms-linear-gradient(top,#fcfcfc,#eaeaea);
+	background:linear-gradient(top,#fcfcfc,#eaeaea);
+}
+
+#desc .box{
+	padding:10px;
+	color:#444;
+	background:#fff;
+	border:1px solid #cacaca;
+	border-radius:0 0 7px 7px;
+}
+
+#desc .box{
+	line-height:1.5;
+}
+
+#desc .box i{
+	font-family: 'Nunito', sans-serif;
+	color:#e4016f;
+	font-style:normal;
+	font-size:20px;
+	vertical-align:baseline;
+	margin:0 5px 0 0;
+}
+
+#desc .box dd{
+	text-indent:22px;
+}
+
+#desc .box #mark dt{
+	width:200px;
+	position:relative;
+	color:#111;
+	line-height:1;
+	text-align:center;
+	margin:30px 0 0 0;
+	padding:10px 0;
+	font-size:110%;
+	color:#fff;
+	zoom:1;
+	background:#e4016f;
+	background:-webkit-gradient(linear, left top,left bottom, from(#e4016f),to(#f13690));
+	background:-moz-linear-gradient(top,#e4016f,#f13690);
+	background:-o-linear-gradient(top,#e4016f,#f13690);
+	background:-ms-linear-gradient(top,#e4016f,#f13690);
+	background:linear-gradient(top,#e4016f,#f13690);
+}
+
+#desc .box #mark dt:before,
+#desc .box #mark dt:after{
+	content:"";
+	position:absolute;
+	top:100%;
+	height:0;
+	width:0;
+	border:5px solid transparent;
+	border-top:5px solid #91434e;
+}
+
+#desc .box #mark dt:before{
+	right:0;
+	border-left:5px solid #91434e;
+}
+#desc .box #mark dt:after{
+	left:0;
+	border-right:5px solid #91434e;
+}
+
+#desc .box #mark dd{
+	margin:15px 0 0 0;
+}
+
+/*============================
+各シーン共通
+============================*/
+html{
+	background:#666;
+	color:#333;
+}
+#container{
+	width:600px;
+	margin:100px auto;
+}
+
+
+#gameWrapper{
+	height:400px;
+	box-shadow:0px 0px 5px rgba(255,255,255,0.5);
+	background:#31768f;
+	border-radius:10px;
+	position:relative;
+	background-image:-webkit-gradient(radial,center top,0,center top,400,from(rgba(255,255,255,0.3)),to(rgba(255,255,255,0)));
+	background-image:-moz-radial-gradient(center top,circle farthest-side,rgba(255,255,255,0.3),rgba(255,255,255,0));
+	background-image:radial-gradient(center top,circle farthest-side,rgba(255,255,255,0.3),rgba(255,255,255,0));
+}
+
+.seane{
+width:600px;
+height:400px;
+}
+
+.btn{
+	cursor:pointer;
+	text-align:center;
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chromeなど */
+}
+
+
+.gotoTop{
+	right:20px;
+	top:20px;
+	position:absolute;
+	font-family:"fontello";
+	font-size:10px;
+	width:120px;
+	height:26px;
+	text-align:center;
+	line-height:26px;
+	border:2px solid #fff;
+	border-radius:13px;
+	color:#fff;
+	overflow: hidden;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.gotoTop:hover{
+	background: #256f8a;
+}
+
+.gotoTop:active{
+	border-color: #1b5164;
+	color: #1b5164;
+}
+.gotoTop:before{
+	position:absolute;
+	content: '\63';
+	left:-10px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.gotoTop:hover:before{
+	left:10px;
+}
+
+.gotoTop:active:before{
+	color: #1b5164;
+}
+
+/*============================
+シーン1
+============================*/
+.seane1 .title{
+	text-align:center;
+	font-family: 'Nunito', sans-serif;
+	color:#fff;
+	font-weight:bold;
+	text-shadow:0 1px 0 #999,0 2px 0 #888,0 3px 0 #777,0 4px 0 #666,0 5px 0 #666,0 6px 0 #555;
+	padding:60px 0 0;
+}
+
+
+.seane1 .title .html,
+.seane1 .title .css{
+	font-size:90px;
+}
+
+.seane1 .title .and{
+	font-size:40px;
+}
+
+.seane1 .subTitle{
+	text-align:center;
+	font-size:30px;
+	color:#fff;
+	padding:30px 0 0 0;
+}
+
+.seane1 .subTitle span{
+	border-radius:50%;
+	padding:10px;
+	margin:0 5px;
+}
+.seane1 .subTitle span:nth-child(odd){
+	background-color:#dc9b61;
+}
+
+.seane1 .subTitle span:nth-child(even){
+	background-color:#6bc067;
+}
+
+
+.seane1 .btnStart{
+	font-family: 'Nunito', sans-serif;
+	color:#fff;
+	width:200px;
+	height:50px;
+	line-height:50px;
+	border-radius:25px;
+	position:absolute;
+	border:2px solid #fff;
+	overflow: hidden;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	left:200px;
+	bottom:40px;
+}
+
+.seane1 .btnStart span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.2s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.2s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.2s;
+	backface-visibility: hidden;
+}
+.seane1 .btnStart:hover{
+	background: #256f8a;
+}
+.seane1 .btnStart:active{
+	border-color: #1b5164;
+	color: #1b5164;
+}
+
+.seane1 .btnStart:hover span{
+	-webkit-transform: translateX(200%);
+	-moz-transform: translateX(200%);
+	-ms-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.seane1 .btnStart:before{
+	content:"Are You Ready?";
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:-100%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.seane1 .btnStart:hover:before{
+	left:0;
+}
+
+.seane1 .btnStart:active:before{
+	color: #1b5164;
+}
+
+/*============================
+シーン2
+============================*/
+.seane2 .ob1{
+	padding:40px 0 0 100px;
+	color:#fff;
+}
+
+.seane2 .ob1:before{
+	color:#d06986;
+	font-style:normal;
+	font-family:"fontello";
+	content:"\61";
+	display:block;
+	width:50px;
+	position:absolute;
+	font-size:44px;
+	left:50px;
+	-webkit-animation: anime1 0.7s linear 0s infinite alternate;
+	-moz-animation: anime1 0.7s linear 0s infinite alternate;
+	animation: anime1 0.7s linear 0s infinite alternate;
+}
+@-webkit-keyframes anime1{
+0%{
+	opacity:0.5;
+	-webkit-transform:scale(0.8,0.8);
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1,1);
+}
+}
+@-moz-keyframes anime1{
+0%{
+	opacity:0.5;
+	-moz-transform:scale(0.8,0.8);
+}
+100%{
+	opacity:1;
+	-moz-transform:scale(1,1);
+}
+}
+@keyframes anime1{
+0%{
+	opacity:0.5;
+	transform:scale(0.8,0.8);
+}
+100%{
+	opacity:1;
+	transform:scale(1,1);
+}
+}
+
+.seane2 .ob2{
+	border:3px solid rgba(255,255,255,0.4);
+	background:rgba(255,255,255,0.4);
+	width:500px;
+	position:absolute;
+	left:50px;
+	top:110px;
+	border-radius:10px;
+	text-align:center;
+	padding:30px 0;
+	font-size:20px;
+}
+
+.seane2 .ob3{
+	width:600px;
+	color:#fff;
+	font-size:30px;
+	position:absolute;
+	text-align:center;
+	bottom:40px;
+	-webkit-animation: anime2 0.7s linear 0s infinite alternate;
+	-moz-animation: anime2 0.7s linear 0s infinite alternate;
+	animation: anime2 0.7s linear 0s infinite alternate;
+}
+@-webkit-keyframes anime2{
+0%{opacity:0.5;}
+100%{opacity:1;}
+}
+@-moz-keyframes anime2{
+0%{opacity:0.5;}
+100%{opacity:1;}
+}
+@keyframes anime2{
+0%{opacity:0.5;}
+100%{opacity:1;}
+}
+
+/*============================
+シーン3
+============================*/
+.seane3 .ob1{
+	font-family: 'Nunito', sans-serif;
+	color:#fff;
+	text-align:center;
+	line-height:200px;
+	font-size:150px;
+}
+
+.seane3 .ob1 span{
+	border:4px solid #fff;
+	border-radius:50%;
+	display:block;
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:200px;
+	top:100px;
+}
+
+/*============================
+シーン4
+============================*/
+.seane4{
+	font-family: 'Nunito', sans-serif;
+}
+
+.seane4 .typing{
+	border:3px solid rgba(255,255,255,0.4);
+	background:rgba(255,255,255,0.4);
+	width:500px;
+	height:200px;
+	position:absolute;
+	left:50px;
+	top:100px;
+	line-height:200px;
+	border-radius:10px;
+	text-align:center;
+	font-size:45px;
+}
+
+.seane4 .typing:before{
+	
+}
+
+.seane4 .bb2f00{
+	border-bottom:5px solid #f00;
+}
+.seane4 .type{
+	color:#FFF;
+}
+
+.seane4 .ng{
+	border-color:rgba(255,50,50,0.5);
+}
+
+.seane4 .ob1{
+	color:#fff;
+	position:absolute;
+	font-size:20px;
+	top:110px;
+	right:60px;
+}
+
+/*============================
+シーン5
+============================*/
+.seane5 .ob1{
+	color:#fff;
+	font-size:40px;
+	padding:50px 0 0 0;
+	text-align:center;
+}
+
+.seane5 .ob2{
+	margin:20px 0 0 0;
+	border:3px solid rgba(255,255,255,0.4);
+	background:rgba(255,255,255,0.4);
+	width:500px;
+	position:absolute;
+	left:50px;
+	top:110px;
+	border-radius:10px;
+	text-align:center;
+	padding:30px 0;
+	font-size:20px;
+	color:#000;
+}
+
+.seane5 .ob2 span{
+	font-size:50px;
+}
+
+.seane5 .btnTw a{
+	size:16px;
+	color:#fff;
+	text-decoration:none;
+	display:block;
+}
+
+.seane5 .btnTw a:active{
+	color: #1b5164;
+}
+
+.seane5 .btnRe{
+	left:47px;
+	bottom:45px;
+}
+
+.seane5 .btnTw{
+	right:47px;
+	bottom:45px;
+}
+
+.seane5 .btnRe,
+.seane5 .btnTw{
+	position:absolute;
+	font-family:"fontello";
+	font-size:16px;
+	width:220px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	border:2px solid #fff;
+	border-radius:13px;
+	color:#fff;
+	overflow: hidden;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.seane5 .btnRe:hover,
+.seane5 .btnTw:hover{
+	background: #256f8a;
+}
+
+.seane5 .btnRe:active,
+.seane5 .btnTw:active{
+	border-color: #1b5164;
+	color: #1b5164;
+}
+.seane5 .btnRe:before,
+.seane5 .btnTw:before{
+	position:absolute;
+	content: '\63';
+	left:-20px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.seane5 .btnRe:hover:before,
+.seane5 .btnTw:hover:before{
+	left:10px;
+}
+
+.seane5 .btnRe:active:before,
+.seane5 .btnTw:active:before{
+	color: #1b5164;
+}
